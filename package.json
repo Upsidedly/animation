@@ -1,0 +1,13 @@
+{
+  "name": "cheesegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server --quiet public"
+  },
+  "keywords": [],
+  "author": "upsided",
+  "license": "ISC",
+  "type": "module"
+}

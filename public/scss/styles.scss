@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|DM+Sans|Noto+Sans|Lato');
+
+$bg-dark: #353531;
+$bg-darker: #2e2e2b;
+$bg-darkest: #242422;
+$yhite: rgb(255, 255, 248);
+
+@keyframes horishake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+@keyframes rainbow {
+    from { color: rgb(255, 119, 119)}
+    20% { color: rgb(255, 255, 119)}
+    60% { color: rgb(155, 155, 255)}
+    80% { color: rgb(255, 122, 255)}
+    to { color: rgb(255, 119, 119);}
+}
+
+@keyframes wtf {
+    0% { transform: translateX(0) translateY(0);}
+    25% { transform: translateX(5px) translateY(5px);}
+    50% { transform: translateX(-5px) translateY(-5px);}
+    75% { transform: translateX(5px) translateY(-5px);}
+    100% { transform: translateX(0) translateY(0);}
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: $bg-darker;
+}
+
+#content {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: $bg-darker;
+  height: 100%;
+  position: absolute;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+      color: $yhite;
+      font-family: 'Noto Sans';
+      font-size: 2em;
+  }
+}
+
+#eggopen {
+    background-color: $bg-darker;
+    border-radius: 0.2em;
+    border: none;
+    font-size: 1.2em;
+    padding: 1em;
+    color: $yhite;
+
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: $bg-darkest;
+        color: rgb(208, 208, 172);
+    }
+
+    &:active {
+        font-size: 1.1em;
+    }
+}
+
+.rainbow {
+    animation: rainbow 3s infinite
+}
+
+.shake {
+    animation: horishake 1s infinite;
+}
+
+.wtf {
+    animation: wtf 0.3s infinite;
+}
+
+.wtfbow {
+    animation: wtf 0.3s infinite, rainbow 3s infinite
+}
+
+.centertext {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

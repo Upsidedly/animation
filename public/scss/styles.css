@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|DM+Sans|Noto+Sans|Lato");
+@-webkit-keyframes horishake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes horishake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes rainbow {
+  from {
+    color: #ff7777;
+  }
+  20% {
+    color: #ffff77;
+  }
+  60% {
+    color: #9b9bff;
+  }
+  80% {
+    color: #ff7aff;
+  }
+  to {
+    color: #ff7777;
+  }
+}
+
+@keyframes rainbow {
+  from {
+    color: #ff7777;
+  }
+  20% {
+    color: #ffff77;
+  }
+  60% {
+    color: #9b9bff;
+  }
+  80% {
+    color: #ff7aff;
+  }
+  to {
+    color: #ff7777;
+  }
+}
+
+@-webkit-keyframes wtf {
+  0% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px) translateY(5px);
+            transform: translateX(5px) translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px) translateY(-5px);
+            transform: translateX(-5px) translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px) translateY(-5px);
+            transform: translateX(5px) translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes wtf {
+  0% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px) translateY(5px);
+            transform: translateX(5px) translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px) translateY(-5px);
+            transform: translateX(-5px) translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateX(5px) translateY(-5px);
+            transform: translateX(5px) translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #2e2e2b;
+}
+
+#content {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #2e2e2b;
+  height: 100%;
+  position: absolute;
+  padding: 1em;
+  text-align: center;
+}
+
+#content h1 {
+  color: #fffff8;
+  font-family: 'Noto Sans';
+  font-size: 2em;
+}
+
+#eggopen {
+  background-color: #2e2e2b;
+  border-radius: 0.2em;
+  border: none;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #fffff8;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#eggopen:hover {
+  background-color: #242422;
+  color: #d0d0ac;
+}
+
+#eggopen:active {
+  font-size: 1.1em;
+}
+
+.rainbow {
+  -webkit-animation: rainbow 3s infinite;
+          animation: rainbow 3s infinite;
+}
+
+.shake {
+  -webkit-animation: horishake 1s infinite;
+          animation: horishake 1s infinite;
+}
+
+.wtf {
+  -webkit-animation: wtf 0.3s infinite;
+          animation: wtf 0.3s infinite;
+}
+
+.wtfbow {
+  -webkit-animation: wtf 0.3s infinite, rainbow 3s infinite;
+          animation: wtf 0.3s infinite, rainbow 3s infinite;
+}
+
+.centertext {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
